@@ -18,7 +18,7 @@
            echo "app service found, No actions taken"
         else
            echo "Creating App Services"
-           kubectl expose deployment kube-server --name kube-server-service --type NodePort --port 8001 --target-port 80 --node-port 30002
+           kubectl expose deployment kube-server --name kube-server-service --type NodePort --port 8001 --target-port 80
         fi
     - name: increase replicas
       shell: kubectl scale deploy kube-server --replicas=3
