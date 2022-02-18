@@ -23,7 +23,12 @@ export default function Home() {
 
         <p className={styles.description}>
           This is a kubernetes application{" "}
-          <code className={styles.code}>Version 1.0</code>
+          <code className={styles.code}>Version 1.1</code>
+        </p>
+
+        <p className={styles.description}>Developed By</p>
+        <p className={styles.description}>
+          <code className={styles.code}>Aswin Venkat</code>
         </p>
 
         <div className={styles.grid}>
