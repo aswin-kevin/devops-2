@@ -28,6 +28,12 @@ pipeline {
 				sh 'sudo docker push aswinkevin/kube-server:$BUILD_NUMBER'
 			}
 		}
+
+        stage('deploy-QA') {
+	         steps {
+                    sh 'sudo ansible-playbook --inventory /home/jenkins-slave/hosts kube-setup.yaml --extra-vars "env=qa build=$BUILD_NUMBER"'
+           }		
+        }
     }
     post {
 		always {
