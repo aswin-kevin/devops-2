@@ -23,12 +23,7 @@ export default function Home() {
 
         <p className={styles.description}>
           This is a kubernetes application{" "}
-          <code className={styles.code}>Version 1.1</code>
-        </p>
-
-        <p className={styles.description}>Developed By</p>
-        <p className={styles.description}>
-          <code className={styles.code}>Aswin Venkat</code>
+          <code className={styles.code}>Version 1.2</code>
         </p>
 
         <div className={styles.grid}>
@@ -64,7 +59,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <div>
-          Powered by <strong> Edureka</strong>
+          Developed by <strong> Aswin Kevin</strong>
         </div>
       </footer>
     </div>
